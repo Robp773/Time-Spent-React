@@ -1,0 +1,10 @@
+.loginBtn{
+    width: 65%;    
+}
+
+@media screen and (min-width: 1000px) {
+
+.loginBtn{
+    width: 25%;
+}
+}
