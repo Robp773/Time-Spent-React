@@ -1,17 +1,24 @@
 import React from 'react';
 import './Main.css';
-import TimeBanner from './TimeBanner'
+import TimeBanner from './TimeBanner';
+import {connect} from 'react-redux';
 
-export default class Main extends React.Component{
+export class Main extends React.Component{
     render(){
+        console.log(this.props.fullState)
             return(
                     <div id='background'>
                         <TimeBanner/>
-                        {/* <Records/>
+                        <div></div>
+                        {/* <PastMins/>
                         <Summary/>
-                        <Plans/> */}
+                        <FutureMins/> */}
                     </div>
             )
     }
-    
-}
+  
+}  
+    const mapStateToProps = state => ({
+        fullState: state
+    });
+    export default connect(mapStateToProps)(Main)

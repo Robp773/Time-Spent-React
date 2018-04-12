@@ -14,7 +14,7 @@ const initialState =
         {
         name: 'Sleep', category: 'Health', productive: true, cost: 24,
         start: {period: 'AM', time: {hour: 8, minutes: 45},
-        end: {period: 'AM', time: {hour: 9, minutes: 09}}   
+        end: {period: 'AM', time: {hour: 9, minutes: 9}}   
         }
     },
         {
